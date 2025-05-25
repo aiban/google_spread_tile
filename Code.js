@@ -87,6 +87,24 @@ function parseSetCookieHeaders(setCookieHeader) {
 }
 
 
+/**
+ * Wrapper function to update location data for Milkdud3.
+ */
+function updateMilkdud3Location() {
+  const TILE_NAME = 'Milkdud3';
+  const SHEET_NAME = 'Milkdud3';
+  updateTileLocationData();
+}
+
+/**
+ * Wrapper function to update location data for Milkdud4.
+ */
+function updateMilkdud4Location() {
+  const TILE_NAME = 'Milkdud4';
+  const SHEET_NAME = 'Milkdud4';
+  updateTileLocationData();
+}
+
 // --- Main Function ---
 /**
  * Main function to orchestrate fetching Tile data and updating the sheet.
