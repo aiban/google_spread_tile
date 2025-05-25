@@ -91,8 +91,8 @@ function parseSetCookieHeaders(setCookieHeader) {
  * Wrapper function to update location data for Milkdud3.
  */
 function updateMilkdud3Location() {
-  const TILE_NAME = 'Milkdud3';
-  const SHEET_NAME = 'Milkdud3';
+  TILE_NAME = 'Milkdud3';
+  SHEET_NAME = 'Milkdud3';
   updateTileLocationData();
 }
 
@@ -100,8 +100,8 @@ function updateMilkdud3Location() {
  * Wrapper function to update location data for Milkdud4.
  */
 function updateMilkdud4Location() {
-  const TILE_NAME = 'Milkdud4';
-  const SHEET_NAME = 'Milkdud4';
+  TILE_NAME = 'Milkdud4';
+  SHEET_NAME = 'Milkdud4';
   updateTileLocationData();
 }
 
@@ -155,8 +155,8 @@ function updateTileLocationData() {
          startTime = new Date(endTime.getTime() - 60 * 60 * 1000); // 1 hour ago
        }
     } else {
-      // No cache, fetch last 7 days (or desired default)
-      startTime = new Date(endTime.getTime() - 7 * 24 * 60 * 60 * 1000); // 7 days ago default
+      // No cache, fetch last 120 days (or desired default)
+      startTime = new Date(endTime.getTime() - 120 * 24 * 60 * 60 * 1000); // 120 days ago default
       Logger.log("No cache found or cache empty. Fetching history for the last 7 days ("+ startTime.toISOString() + " to " + endTime.toISOString() +")");
     }
 
